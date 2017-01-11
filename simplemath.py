@@ -20,6 +20,9 @@ class SimpleMath(object):
 
         self.total = start_value
 
-    def increment(self):
-        """ increment the total by 1"""
         pass
+
+    def __str__(self):
+       """return a string representation of self.total"""
+
+       return str(self.total)
