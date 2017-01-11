@@ -18,7 +18,7 @@ class SimpleMath(object):
         :throws ValueError: if start_value is not an integer
         """
 
-        self.total = 1
+        self.total = start_value
 
     def increment(self):
         """ increment the total by 1"""
