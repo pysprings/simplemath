@@ -9,11 +9,15 @@ import simplemath
 
 class TestSimpleMath(unittest.TestCase):
 
-    def test_increment(self):
+    def test_construct(self):
+        """Test to make sure that we can start with any integer value"""
         test_simplemath = simplemath.SimpleMath(0)
-        test_simplemath.increment()
 
-        self.assertEqual(test_simplemath.total, 1)
+        self.assertEqual(test_simplemath.total, 0)
+
+    def test_construct_integer_only(self):
+        """Make sure that a ValueError is thrown if a non-integer parameter is passed as start_value"""
+        pass
 
 
 if __name__ == '__main__':
