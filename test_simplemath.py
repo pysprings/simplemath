@@ -15,6 +15,13 @@ class TestSimpleMath(unittest.TestCase):
 
         self.assertEqual(test_simplemath.total, 0)
 
+    def test_string_render(self):
+        """test to make sure that the string rendering works"""
+
+        test_simplemath = simplemath.SimpleMath(2)
+
+        self.assertEqual(str(test_simplemath), "2")
+
     def test_construct_integer_only(self):
         """Make sure that a ValueError is thrown if a non-integer parameter is passed as start_value"""
         pass
