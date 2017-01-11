@@ -23,3 +23,7 @@ class SimpleMath(object):
     def increment(self):
         """ increment the total by 1"""
         pass
+
+	def _str_(self):
+		"""Return a good string representation of the interget."""
+		pass
